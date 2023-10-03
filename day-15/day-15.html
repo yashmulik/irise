@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsiveness</title>
+    <style>
+        #parentdiv{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .childcss{
+            width: 23%;
+            height: 300px;
+            border: 2px solid black;
+        }
+        @media screen and (mid-width: 500px) {
+            #parentdiv{
+                color: red;
+                font-size: 50px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="parentdiv">
+    <div class="childcss">1</div>
+    <div class="childcss">1</div>
+    <div class="childcss">1</div>
+    <div class="childcss">1</div>
+</div>
+
 </body>
 </html>
